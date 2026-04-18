@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/logo2.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><i class="bi bi-film"></i> CineList</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(32, 32, 32);">
+        <div class="container-fluid col-12 col-md-4">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width: 200px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +22,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="new-movie.html">Add New</a></li>
                 </ul>
             </div>
@@ -30,101 +29,30 @@
     </nav>
 
     <div class="container my-5">
-        <div class="row g-3 mb-4">
-            <div class="col-12 col-md-4">
-                <div class="alert alert-success m-0 shadow-sm d-flex align-items-center" role="alert">
-                    <i class="bi bi-stars me-2"></i>
-                    <div>
-                        <strong>New Feature!</strong> Import your lists from other websites now.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="alert alert-warning m-0 shadow-sm d-flex align-items-center" role="alert">
-                    <i class="bi bi-Exclamation-circle me-2"></i>
-                    <div>
-                        <strong>Don't forget!</strong> Rate the movies you've seen this week.
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="alert alert-danger m-0 shadow-sm d-flex align-items-center" role="alert">
-                    <i class="bi bi-shield-lock me-2"></i>
-                    <div>
-                        <strong>Spoiler Alert:</strong> Reviews for <em>Longlegs</em> may contain spoilers!
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-5 shadow-sm">
-            <div class="card-body p-4">
-                <p class="card-text text-center text-muted">
-                    <i>"Stop forgetting which movies you’ve seen and start building your legacy. We bridge the gap
+                <p class="card-text text-center" style="font-size: 18px; padding: 12px; border-radius: 8px; background-color: black; color: white; font-style: oblique;">
+                    "Stop forgetting which movies you’ve seen and start building your legacy. We bridge the gap
                         between
                         watching and remembering. Rate, review, and tag your films to create a personalized archive that
                         evolves
                         with your taste. Explore trending titles, dive into community-curated collections, and connect
                         with
                         fans who share your obsession. No more endless scrolling—just better movies and a community that
-                        gets it."</i>
+                        gets it."
                 </p>
-            </div>
-        </div>
 
         <div class="card shadow-sm border-0">
             <div class="card-body">
-                <h2 class="mb-4">Featured Movies</h2>
+                <h2 class="mb-4 text-center">Featured Movies</h2>
                 <div class="row">
-
                     <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
                         <div class="card mb-4 w-100">
-                            <img src="images/movie1.png" class="card-img-top" alt="Longlegs"
-                                style="height: 400px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Longlegs</h5>
-                                <p class="card-text flex-grow-1">A chilling, atmospheric thriller where an FBI agent
-                                    uncovers occult links while hunting an elusive, unsettling serial killer.</p>
-                                <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
-                                <h6>User ratings</h6>
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-success" style="width: 92%">92%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
-                        <div class="card mb-4 w-100">
-                            <img src="images/movie3.png" class="card-img-top" alt="Halloween"
-                                style="height: 400px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Halloween (2018)</h5>
-                                <p class="card-text flex-grow-1">Michael Myers escapes confinement to face Laurie Strode
-                                    in a tense, brutal showdown forty years after his original spree.</p>
-                                <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
-                                <h6>User ratings</h6>
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar" style="width: 87%">87%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
-                        <div class="card mb-4 w-100">
-                            <img src="images/movie2.png" class="card-img-top" alt="The Witch"
-                                style="height: 400px; object-fit: cover;">
+                            <img src="images/thewitchposter.png" class="card-img-top" style="height: 450px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">The Witch</h5>
-                                <p class="card-text flex-grow-1">In 17th-century New England, a banished Puritan family
-                                    unravels as supernatural forces and paranoia haunt their isolated farm.</p>
                                 <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
                                 <h6>User ratings</h6>
                                 <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-warning" style="width: 73%">73%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 89%">89%</div>
                                 </div>
                             </div>
                         </div>
@@ -132,16 +60,41 @@
 
                     <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
                         <div class="card mb-4 w-100">
-                            <img src="images/movie4.png" class="card-img-top" alt="Project Hail Mary"
-                                style="height: 400px; object-fit: cover;">
+                            <img src="images/hereditaryposter.png" class="card-img-top" style="height: 450px;">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Project Hail Mary</h5>
-                                <p class="card-text flex-grow-1">A lone astronaut awakens on a spaceship with amnesia,
-                                    racing to solve a scientific mystery and save humanity.</p>
+                                <h5 class="card-title">Hereditary</h5>
                                 <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
                                 <h6>User ratings</h6>
                                 <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-danger" style="width: 67%">67%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <img src="images/theblairwitchposter.png" class="card-img-top" style="height: 450px;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">The Blair Witch Project</h5>
+                                <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
+                                <h6>User ratings</h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 98%">98%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3 d-flex align-items-stretch">
+                        <div class="card mb-4 w-100">
+                            <img src="images/themenuposter.png" class="card-img-top" style="height: 450px;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">The Menu</h5>
+                                <a href="#" class="btn btn-danger w-100 mb-3">Add to watchlist</a>
+                                <h6>User ratings</h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 100%">100%</div>
                                 </div>
                             </div>
                         </div>
