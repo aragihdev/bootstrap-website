@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-film"></i> CineList</a>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-film"></i> CineList</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,61 +23,70 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Movies</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="new-movie.html">Add New</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container mt-3">
-        <h3 style="color: white; margin-bottom: 40px; text-align: center;">Contato</h3>
+
+        <h3 style="color: white; margin-bottom: 40px; text-align: center;">Add Movie</h3>
         <form class="row g-3 justify-content-center">
             <div class="col-md-6 col-sm-12">
                 <div class="form-floating">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                    <label for="name">Full name</label>
+                    <input type="text" name="movie" id="movie" class="form-control" placeholder="Movie Name" required>
+                    <label for="name">Movie Name</label>
                 </div>
             </div>
+
             <div class="col-md-4 col-sm-12">
                 <div class="form-floating">
-                    <input type="text" name="password" id="password" class="form-control" placeholder="password">
-                    <label for="name">Password</label>
+                    <input type="number" step="1" min="0" max="18" name="age" id="age" class="form-control" placeholder="Age Rating" required>
+                    <label for="name">Age Rating</label>
                 </div>
             </div>
+
             <div class="col-md-5 col-sm-12">
                 <div class="form-floating">
-                    <input type="date" name="data" id="data" class="form-control" placeholder="data" required>
-                    <label for="name">Date of Birth</label>
+                    <input type="number" step="5" min="60" max="240" name="duration" id="duration" class="form-control" placeholder="Duration" required>
+                    <label for="name">Duration (minutes)</label>
                 </div>
             </div>
+
             <div class="col-md-5 col-sm-12">
                 <div class="form-floating">
-                    <select name="category" id="category" class="form-select">
-                        <option value="" selected disabled>Select</option>
-                        <option value="movie_enthusiast">Auteurist Critic</option>
-                        <option value="movie_enthusiast">Movie Enthusiast</option>
-                        <option value="movie_enthusiast">Genre Specialist</option>
-                        <option value="movie_enthusiast">Movie Curator</option>
+                    <select name="genre" id="genre" class="form-select" required>
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="action">Action</option>
+                        <option value="drana">Drama</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="sci-fi">Sci-Fi</option>
                     </select>
+                    <label for="categoria">Genre</label>
                 </div>
             </div>
+
             <div class="col-md-10 col-sm-12">
-                <label class="form-label d-block">Type</label>
+                <label class="form-label d-block">Produced in</label>
+
                 <div class="form-check form-check-inline">
-                    <input type="radio" name="type" id="aluno" class="form-check-input" required>
-                    <label for="aluno" class="form-check-label">Student</label>
+                    <input type="radio" name="produced" value="USA" class="form-check-input" required>
+                    <label class="form-check-label">USA</label>
                 </div>
+
                 <div class="form-check form-check-inline">
-                    <input type="radio" name="type" id="professor" class="form-check-input">
-                    <label for="professor" class="form-check-label">Professor</label>
+                    <input type="radio" name="produced" value="UK" class="form-check-input">
+                    <label class="form-check-label">UK</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="produced" value="Brazil" class="form-check-input">
+                    <label class="form-check-label">Brazil</label>
                 </div>
             </div>
-            <div class="col-md-10 col-sm-12">
-                <div class="form-check">
-                    <input type="checkbox" name="terms" id="terms" class="form-check-input" required>
-                    <label for="terms">I read and accept the terms.</label>
-                </div>
-            </div>
+
             <div class="col-md-10 col-sm-12">
                 <button type="submit" class="btn btn-success col-sm-12">Submit</button>
             </div>
